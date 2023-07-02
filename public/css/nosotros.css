@@ -1,0 +1,96 @@
+/* Estilos generales */
+body {
+    font-family: 'Figtree', sans-serif;
+    margin: 0;
+    background-image: url(../img/fondo.png);
+
+  }
+  
+  /* Estilos del encabezado */
+  header {
+    background-color: rgb(45, 189, 189);
+    padding: 20px;
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header .titulo_logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  header img {
+    width: 100px;
+    margin-right: 10px;
+  }
+  
+  header nav a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin-left: 10px;
+    font-size: 18px;
+  }
+  
+  header nav a:last-child {
+    margin-right: 0;
+    color: rgb(255, 255, 255);
+  }
+  
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: 0 auto;
+    border: 1px solid #fefefe;
+    padding: 10px;
+    background-color: white;
+  }
+  
+  .formulario {
+    width: 45%;
+  }
+  
+  .formulario h2 {
+    margin-bottom: 10px;
+  }
+  
+  .formulario form {
+    margin-top: 20px;
+  }
+  
+  .campo {
+    margin-bottom: 15px;
+  }
+  
+  .campo label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .campo input,
+  .campo textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+  }
+  
+  .informacion {
+    width: 45%;
+  }
+  
+  .informacion h2,
+  .informacion h3 {
+    margin-bottom: 10px;
+  }
+  
+  .informacion p {
+    margin-bottom: 15px;
+  }
+  
+  .informacion strong {
+    font-weight: bold;
+  }
+  

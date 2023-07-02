@@ -1,0 +1,128 @@
+/* ---------------------------- HEADER---------------------------- */
+header {
+    background-color: rgb(45, 189, 189);
+    padding: 20px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  header .titulo_logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  header img {
+    width: 100px;
+    margin-right: 10px;
+  }
+  
+  header nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+    font-size: 18px;
+  }
+  
+  header nav a:last-child {
+    margin-right: 0;
+    color: black;
+  }
+
+
+  /* Estilos para el navbar */
+  .navbar {
+    background-color: #c7c7c7;
+    overflow: hidden;
+}
+
+/* ---------------------------- CONTENEDOR ---------------------------- */
+html{
+  height: 100%;
+  margin: 0;
+}
+.container {
+  min-height: calc(100% - 100px); /* Ajusta el valor 100px según la altura deseada del footer */
+  padding-bottom: 100%; /* Ajusta el valor 100px según la altura deseada del footer */
+  box-sizing: border-box;
+}
+
+*{
+  font-family: 'Figtree', sans-serif;
+}
+/* ---------------------------- NAVBAR---------------------------- */
+/* Estilos para los enlaces del navbar */
+.navbar a {
+    float: left;
+    display: block;
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 14px 30px;
+    text-decoration: none;
+}
+
+/* Estilos para los enlaces activos del navbar */
+.navbar a.active {
+    background-color: rgb(45, 189, 189);
+}
+
+/* ---------------------------- TABLA---------------------------- */
+/* Estilos para la tabla */
+ table {
+    border-collapse: collapse;
+    width: 35%;
+}
+
+/* Estilos para las celdas encabezado */
+th {
+    background-color: rgb(45, 189, 189);
+    color: white;
+    text-align: left;
+    padding: 8px;
+}
+
+/* Estilos para las celdas de datos */
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#boton_revisar {
+    background-color: rgb(185, 185, 185);
+    color: rgb(0, 0, 0);
+    border: none;
+
+}
+
+footer {
+  height: 100px; /* Ajusta el valor según la altura deseada del footer */
+  background-color: #000000;
+  position: sticky;
+  bottom: 0;
+  color: white;
+}
+
+/* Estilos adicionales para el footer */
+.containerf {
+  padding: 20px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.footer-links li {
+  display: inline;
+  margin-right: 10px;
+
+}
+
+.footer-links li:last-child {
+  margin-right: 0;
+}
+
