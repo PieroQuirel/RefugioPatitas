@@ -19,8 +19,8 @@ return new class extends Migration
 
             $table->unsignedBigInteger('veterinario')->unique();
             $table->foreign('veterinario')
-                  ->references('veterinario_id')
-                  ->on('veterinarios');
+                  ->references('id')
+                  ->on('users');
                   
             $table->string('vacunas',250)->nullable();
             $table->string('enfermedades',250)->nullable();

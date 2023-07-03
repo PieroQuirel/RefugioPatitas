@@ -11,7 +11,7 @@ return new class extends Migration
         Schema::create('mascotas', function (Blueprint $table) {
             $table->id('mascota_id');
             $table->string('mascota_nombre',45);
-            $table->enum('Estado',['En Adopción','Adoptado','En tratamiento']);
+            $table->enum('estado',['En Adopción','Adoptado','En tratamiento']);
             $table->string('tipo',45)->nullable();
             $table->string('raza',45)->nullable();
             $table->string('mascota_edad',4)->nullable();

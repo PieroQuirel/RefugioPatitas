@@ -30,9 +30,14 @@
                 <table class="table-fixed w-full">
                     <thead>
                         <tr clsss="bg-gray-300 text-white">
-                            <th class="border px4 py-2">ID Formularios</th>
-                            <th class="border px4 py-2">ID Mascota</th>
-                            <th class="border px4 py-2">Revisar Formulario</th>
+                            <th class="border px4 py-2">ID Solicitud</th>
+                            <th class="border px4 py-2">Adoptante</th>
+                            <th class="border px4 py-2">Mascota</th>
+                            <th class="border px4 py-2">DNI</th>
+                            <th class="border px4 py-2">Dia de solicitud</th>
+                            <th class="border px4 py-2">Direccion</th>
+                            <th class="border px4 py-2">Comprobante de domicilio</th>
+                            <th class="border px4 py-2">Estado de revisión</th>
                         </tr>
                     </thead>
                     <tbody>

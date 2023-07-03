@@ -12,8 +12,8 @@ return new class extends Migration
         Schema::create('solicitudes', function (Blueprint $table) {
             $table->id('solicitud_id');
 
-            $table->unsignedBigInteger('usuario')->unsigned();
-            $table->foreign('usuario')
+            $table->unsignedBigInteger('adoptante')->unsigned();
+            $table->foreign('adoptante')
                   ->references('id')
                   ->on('users');
             
@@ -22,15 +22,11 @@ return new class extends Migration
                   ->references('mascota_id')
                   ->on('mascotas');
 
-            $table->unsignedBigInteger('administrador')->unsigned();
-            $table->foreign('administrador')
-                  ->references('admin_id')
-                  ->on('administradores');
-
             $table->string('dni',8);
             $table->dateTime('fecha_envio');
             $table->string('direccion',60);
             $table->string('comprobante_domicilio',250);
+            $table->enum('estado',['Pendiente','Aprobado','Desaprobado']);
             $table->timestamps();
         });
     }

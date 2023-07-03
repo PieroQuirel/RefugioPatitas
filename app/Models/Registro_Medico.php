@@ -18,6 +18,6 @@ class Registro_Medico extends Model
     }
 
     public function veterinario(){
-        return $this->belongsTo('App\Models\Veterinario','veterinario_id','veterinario');
+        return $this->belongsTo('App\Models\User','id','veterinario');
     }
 }

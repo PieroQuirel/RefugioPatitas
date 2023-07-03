@@ -15,10 +15,11 @@ return new class extends Migration
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
-            $table->rememberToken();
-            $table->timestamps();
             $table->string('edad',4);
             $table->string('celular',15)->nullable();
+            $table->enum('rol',['Adoptante','Administrador','Veterinario'])->nullable()->default('Adoptante');
+            $table->rememberToken();
+            $table->timestamps();
         });
     }
     public function down(): void

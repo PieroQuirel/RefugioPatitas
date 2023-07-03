@@ -23,8 +23,11 @@ class User extends Authenticatable
      */
     protected $fillable = [
         'name',
+        'apellido',
         'email',
         'password',
+        'edad',
+        'celular'
     ];
 
     /**
@@ -48,7 +51,11 @@ class User extends Authenticatable
     ];
 
     public function solicitud_adopcion(){
-        return $this->hasMany('App\Models\Solicitud_Adopcion','usuario','id');
+        return $this->hasMany('App\Models\Solicitud_Adopcion','adoptante','id');
+    }
+
+    public function registro_medico(){
+        return $this->hasOne('App\Models\Registro_Medico','veterinario','id');
     }
 
 }

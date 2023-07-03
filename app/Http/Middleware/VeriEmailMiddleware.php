@@ -18,7 +18,7 @@ class VeriEmailMiddleware
         Luego, utiliza la función strpos() para verificar si el correo electrónico del usuario no contiene el fragmento '@admin.com'. 
         Si la condición se cumple, significa que el usuario no tiene un correo electrónico de administrador. */
         if ($role && $user && strpos($user->email, '@admin.com') === false) {
-            return redirect('/'); // Si el usuario no tiene un correo electrónico de administrador, se redirige al URI raíz, es decir, a la página de inicio 
+            return redirect('/'); // Si el usuario no tiene un correo de admin, redirige al URI raíz, (la página de inicio) 
         }
 
         return $next($request);

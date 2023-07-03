@@ -25,7 +25,14 @@ class EventServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        //
+        parent::boot();
+
+        Event::listen(Registered::class, function ($event) {
+            if (strpos($event->user->email, '@admin.com') !== false) {
+                $event->user->rol = 'Administrador';
+                $event->user->save();
+        }
+    });
     }
 
     /**

@@ -30,8 +30,12 @@
                     <thead>
                         <tr clsss="bg-gray-300 text-white">
                             <th class="border px4 py-2">ID Mascota</th>
-                            <th class="border px4 py-2">ID Adoptante</th>
-                            <th class="border px4 py-2">Chequeo Medico</th>
+                            <th class="border px4 py-2">Nombre</th>
+                            <th class="border px4 py-2">Estado de adopción</th>
+                            <th class="border px4 py-2">Tipo y Raza</th>
+                            <th class="border px4 py-2">Edad</th>
+                            <th class="border px4 py-2">Fecha de recojo</th>
+                            <th class="border px4 py-2">Descripción</th>
                         </tr>
                     </thead>
                     <tbody>

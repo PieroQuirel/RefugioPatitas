@@ -40,7 +40,7 @@
             @endif
 
             <x-primary-button class="ml-3">
-                {{ __('¿Iniciar Sesion') }} <!--TEXTO INICIAR SESION --> 
+                {{ __('Iniciar Sesion') }} <!--TEXTO INICIAR SESION --> 
             </x-primary-button>
         </div>
     </form>

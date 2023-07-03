@@ -30,11 +30,30 @@
                     <thead>
                         <tr clsss="bg-gray-300 text-white">
                             <th class="border px4 py-2">ID</th>
-                            <th class="border px4 py-2">Usuario</th>
-                            <th class="border px4 py-2">Adoptante</th>
+                            <th class="border px4 py-2">Nombre y Apellido</th>
+                            <th class="border px4 py-2">Email</th>
+                            <th class="border px4 py-2">Contreseña</th>
+                            <th class="border px4 py-2">Edad</th>
+                            <th class="border px4 py-2">Celular</th>
+                            <th class="border px4 py-2">Rol en sistema</th>
                         </tr>
                     </thead>
                     <tbody>
+                        @foreach ($users as $user)
+                            <tr>
+                                <td>{{$user->id}}</td>
+                                <td>
+                                    {{$user->name}}
+                                    {{$user->apellido}}
+                                </td>
+                                <td>{{$user->email}}</td>
+                                <td>{{$user->password}}</td>
+                                <td>{{$user->edad}}</td>
+                                <td>{{$user->celular}}</td>
+                                <td>{{$user->rol}}</td>
+                            </tr>
+                        @endforeach
+                    </tbody>
                        
                 </table>
                     <div>
