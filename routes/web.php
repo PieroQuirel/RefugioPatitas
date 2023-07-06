@@ -9,7 +9,7 @@ use App\Http\Controllers\PanelformController;
 use App\Http\Controllers\PanelmascotController;
 use App\Http\Controllers\PanelusuarController;
 use App\Http\Controllers\PerfilController;
-use App\Http\Controllers\ProductosController;
+use App\Http\Controllers\ProductoController;
 
 /*
 |--------------------------------------------------------------------------
@@ -36,7 +36,7 @@ Route::resource('/mascotas', MascotasController::class);
 //RUTA DE PERFIL usando la forma resource
 Route::resource('/perfil', PerfilController::class);
 //RUTA DE PRODUCTOS usando la forma resource
-Route::resource('/productos', ProductosController::class);
+Route::resource('/productos', ProductoController::class);
 
 // ------------------ADMINISTRADOR--------------------
 //RUTA PARA VER EL PANEL DE MASCOTAS

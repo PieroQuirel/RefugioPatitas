@@ -43,6 +43,10 @@
   .profile-details strong {
     font-weight: bold;
   }
+
+  #pmain{
+    margin-top: 17%;
+  }
   
   /* Resto de estilos para el diseño de la página */
   

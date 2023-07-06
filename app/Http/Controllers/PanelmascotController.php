@@ -14,7 +14,7 @@ class PanelmascotController extends Controller
 
     public function create()
     {
-        //
+        return view('panelmascotas.agregar_mascota');
     }
 
     public function store(Request $request)

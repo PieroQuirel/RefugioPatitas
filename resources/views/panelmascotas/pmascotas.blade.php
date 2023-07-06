@@ -4,12 +4,7 @@
         <h1 class="font-semibold text-xl text-gray-800 leading-tight">
             {{ __('Vista Administrador') }}
         </h1>
-
-        
-
-        <h3>
-
-        </h3>
+        <h3></h3>
     <!---------------------------------------------------------------------->
     </x-slot>
 
@@ -18,6 +13,9 @@
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 text-gray-900">
                     {{ __("Panel de Mascotas") }}
+                    <a href="{{route('panelmascotas.create')}}">
+                    <button>AGREGAR MASCOTA</button>
+                    </a>
                 </div>
             </div>
         </div>

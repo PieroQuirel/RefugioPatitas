@@ -27,6 +27,7 @@ class EventServiceProvider extends ServiceProvider
     {
         parent::boot();
 
+        // Asignar el rol administrador si tiene @admin.com
         Event::listen(Registered::class, function ($event) {
             if (strpos($event->user->email, '@admin.com') !== false) {
                 $event->user->rol = 'Administrador';
