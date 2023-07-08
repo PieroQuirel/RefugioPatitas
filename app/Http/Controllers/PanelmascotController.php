@@ -9,7 +9,8 @@ class PanelmascotController extends Controller
 {
     public function index()
     {
-        return view('panelmascotas.pmascotas');
+        $mascotas = Mascota::paginate(4);
+        return view('panelmascotas.pmascotas',compact('mascotas'));
     }
 
     public function create()
@@ -19,7 +20,25 @@ class PanelmascotController extends Controller
 
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'mascota_nombre' => ['required', 'string', 'max:45'],
+            'estado' => ['in:En adopcion,Adoptado,En tratamiento'],
+            'mascota_edad' => ['integer', 'max:30'],
+            'mascota' => ['image','mimes:jpeg,jpg,png,svg']
+        ]);
+
+        $mascota = $request->all();
+
+        if ($imagen = $request->file('mascota_imagen')) {
+            $rutaDestinoImagen = 'imagen/';
+            $NuevoNombreImagen = date('YmdHis') . "." . $imagen->getClientOriginalExtension();
+            $imagen->move($rutaDestinoImagen, $NuevoNombreImagen);
+            $mascota['mascota_imagen'] = "$NuevoNombreImagen";
+        }
+
+        Mascota::create($mascota);
+        return redirect()->route('panelmascotas.index');
+        
     }
 
     public function show(string $id)

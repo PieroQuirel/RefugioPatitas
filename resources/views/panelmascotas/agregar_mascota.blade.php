@@ -16,7 +16,18 @@
         <a href="{{route('panelmascotas.index')}}">Volver</a>
     </div>
 
-    <form action="" method="POST">
+    @if ($errors->any())
+    <div class="alert alert-danger">
+        <ul>
+            @foreach ($errors->all() as $error)
+                <li>{{ $error }}</li>
+            @endforeach
+        </ul>
+    </div>
+    @endif
+
+    <form action="{{ route('panelmascotas.store') }}" method="POST" enctype="multipart/form-data">
+        @csrf
         <div>
             <label for="">Nombre de la mascota</label>
             <input type="text" name="mascota_nombre" class="form-control">
@@ -24,7 +35,7 @@
         <div>
             <label for="">Estado</label>
             <select name="estado" id="">
-                <option value="En adopción">En adopción</option>
+                <option value="En adopcion">En adopción</option>
                 <option value="Adoptado">Adoptado</option>
                 <option value="En tratamiento">En tratamiento</option>
             </select>
@@ -43,7 +54,7 @@
         </div>
         <div>
             <label for="">Imagen</label>
-            <input type="file" name="mascota_imagen" class="form-control">
+            <input type="file" id="mascota_imagen" name="mascota_imagen" class="form-control">
         </div>
         <div>
             <label for="">Descripción</label>

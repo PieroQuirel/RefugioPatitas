@@ -47,7 +47,8 @@ Route::resource('/panelusuarios', PanelusuarController::class);
 //RUTA PARA VER EL PANEL DE FORMULARIOS
 Route::resource('/panelformularios', PanelformController::class);
 
-//---RUTAS PARA VERIFICACION DE USUARIO ADMINISTRADOR Y NORMAL----
+//---RUTAS PARA VERIFICACION DE USUARIOS SEGUN SUS ROLES----
+
 // Rutas para el administrador
 Route::middleware(['auth', 'veriEmail:admin'])->group(function () {
     Route::get('/dashboard', function () {return view('dashboard');

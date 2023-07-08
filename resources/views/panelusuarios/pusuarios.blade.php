@@ -24,7 +24,7 @@
     <div class="py-3">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8 ">
             <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
-                <table class="table-fixed w-full">
+                <table class="table-fixed w-full" style="text-align: center;">
                     <thead>
                         <tr clsss="bg-gray-300 text-white">
                             <th class="border px4 py-2">ID</th>
@@ -48,6 +48,10 @@
                                 <td>{{$user->edad}}</td>
                                 <td>{{$user->celular}}</td>
                                 <td>{{$user->rol}}</td>
+                                <td>
+                                    <button>Eliminar</button>
+                                    <button>Editar</button>
+                                </td>
                             </tr>
                         @endforeach
                     </tbody>

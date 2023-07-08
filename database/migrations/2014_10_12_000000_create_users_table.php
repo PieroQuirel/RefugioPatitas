@@ -15,8 +15,8 @@ return new class extends Migration
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
-            $table->integer('edad',4)->nullable();
-            $table->string('celular',15)->nullable();
+            $table->integer('edad')->nullable();
+            $table->string('celular')->nullable();
             $table->enum('rol',['Adoptante','Administrador','Veterinario'])->nullable()->default('Adoptante');
             $table->rememberToken();
             $table->timestamps();

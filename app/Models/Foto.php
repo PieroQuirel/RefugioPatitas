@@ -9,7 +9,7 @@ class Fotos extends Model
 {
     use HasFactory;
     
-    protected $table = 'foto';
+    protected $table = 'fotos';
 
     protected $primaryKey = 'foto_id';
 

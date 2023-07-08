@@ -33,17 +33,27 @@
                             <th class="border px4 py-2">Tipo y Raza</th>
                             <th class="border px4 py-2">Edad</th>
                             <th class="border px4 py-2">Fecha de recojo</th>
+                            <th class="border px4 py-2">Imagen</th>
                             <th class="border px4 py-2">Descripción</th>
                         </tr>
                     </thead>
                     <tbody>
-                       
+                        @foreach ($mascotas as $mascota)
+                            <tr>
+                                <td>{{$mascota->mascota_id}}</td>                                                        
+                                <td>{{$mascota->mascota_nombre}}</td>                                                        
+                                <td>{{$mascota->estado}}</td>                                                        
+                                <td>{{$mascota->tipo}} {{$mascota->raza}}</td>                                                     
+                                <td>{{$mascota->mascota_edad}}</td>                                                       
+                                <td>{{$mascota->fecha_recojo}}</td>                                    
+                                <td><img style="max-width:100px;" src="/imagen/{{$mascota->mascota_imagen}}"></td>
+                                <td>{{$mascota->mascota_descripcion}}</td>
+                        @endforeach
+                    </tbody>
                 </table>
                     <div>
                     </div>
             </div>
         </div>
     </div>
-
-
 </x-app-layout>

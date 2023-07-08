@@ -9,7 +9,7 @@ class Registro_Medico extends Model
 {
     use HasFactory;
     
-    protected $table = 'registro';
+    protected $table = 'registros_medicos';
 
     protected $primaryKey = 'registro_id';
 
@@ -19,5 +19,9 @@ class Registro_Medico extends Model
 
     public function veterinario(){
         return $this->belongsTo('App\Models\User','id','veterinario');
+    }
+
+    public function sesiones(){
+        return $this->hasMany('App\Models\Sesiones','registro','registro_id');
     }
 }

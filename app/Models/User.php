@@ -59,4 +59,8 @@ class User extends Authenticatable
         return $this->hasOne('App\Models\Registro_Medico','veterinario','id');
     }
 
+    public function sesiones(){
+        return $this->hasMany('App\Models\Sesiones','adoptante','id');
+    }
+
 }
