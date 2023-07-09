@@ -24,10 +24,10 @@
     <div class="py-3">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8 ">
             <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
-                <table class="table-fixed w-full">
+                <table class="table-fixed w-full" style="text-align: center;">
                     <thead>
                         <tr clsss="bg-gray-300 text-white">
-                            <th class="border px4 py-2">ID Mascota</th>
+                            <th class="border px4 py-2">ID</th>
                             <th class="border px4 py-2">Nombre</th>
                             <th class="border px4 py-2">Estado de adopción</th>
                             <th class="border px4 py-2">Tipo y Raza</th>
@@ -35,6 +35,7 @@
                             <th class="border px4 py-2">Fecha de recojo</th>
                             <th class="border px4 py-2">Imagen</th>
                             <th class="border px4 py-2">Descripción</th>
+                            <th class="border px4 py-2">Opciones</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -48,6 +49,9 @@
                                 <td>{{$mascota->fecha_recojo}}</td>                                    
                                 <td><img style="max-width:100px;" src="/imagen/{{$mascota->mascota_imagen}}"></td>
                                 <td>{{$mascota->mascota_descripcion}}</td>
+                                <td><a href="{{route('panelmascotas.edit', $mascota->mascota_id)}}"><button style="color:orange;">Editar</button></a>
+                                <button style="color:red;">Eliminar</button> 
+                                <button>Registro Médico</button></td>
                         @endforeach
                     </tbody>
                 </table>

@@ -46,14 +46,17 @@ class PanelmascotController extends Controller
         //
     }
 
-    public function edit(string $id)
+    public function edit($panelmascota)
     {
-        //
+        $mascota = Mascota::find($panelmascota);
+        return view('panelmascotas.editar_mascota',['mascota' => $mascota]);
     }
 
-    public function update(Request $request, string $id)
+    public function update(Request $request, $panelmascota)
     {
-        //
+        $mascota = Mascota::find($panelmascota);
+        $mascota->update($request->all());
+        return redirect()->route('panelmascotas.index');
     }
 
     public function destroy(string $id)

@@ -23,10 +23,10 @@ return new class extends Migration
                   ->on('mascotas');
 
             $table->string('dni',8);
-            $table->dateTime('fecha_envio');
+            $table->date('fecha_envio');
             $table->string('direccion',60);
             $table->string('comprobante_domicilio',250);
-            $table->enum('estado',['Pendiente','Aprobado','Desaprobado']);
+            $table->enum('estado',['Pendiente','Aprobado','Desaprobado'])->default('Pendiente');
             $table->timestamps();
         });
     }

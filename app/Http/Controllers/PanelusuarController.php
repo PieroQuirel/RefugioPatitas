@@ -59,14 +59,17 @@ class PanelusuarController extends Controller
         //
     }
 
-    public function edit(string $id)
+    public function edit($panelusuario)
     {
-        //
+        $user = User::find($panelusuario);
+        return view('panelusuarios.editar_usuario',['user' => $user]);
     }
 
-    public function update(Request $request, string $id)
+    public function update(Request $request, $panelusuario)
     {
-        //
+        $user = User::find($panelusuario);
+        $user->update($request->all());
+        return redirect()->route('panelusuarios.index');
     }
 
     public function destroy(string $id)

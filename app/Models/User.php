@@ -51,8 +51,8 @@ class User extends Authenticatable
         'password' => 'hashed',
     ];
 
-    public function solicitud_adopcion(){
-        return $this->hasMany('App\Models\Solicitud_Adopcion','adoptante','id');
+    public function solicitud(){
+        return $this->hasMany('App\Models\Solicitud','adoptante','id');
     }
 
     public function registro_medico(){

@@ -13,7 +13,7 @@ class Respuesta extends Model
 
     protected $primaryKey = 'respuesta_id';
 
-    public function solicitud_adopcion(){
-        return $this->belongsTo('App\Models\Solicitud_Adopcion','solicitud_id','solicitud');
+    public function solicitud(){
+        return $this->belongsTo('App\Models\Solicitud','solicitud_id','solicitud');
     }
 }

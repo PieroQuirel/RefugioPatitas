@@ -14,12 +14,12 @@
 	<header>
 		<div class="titulo_logo">
 			<a href="/">
-				<img src="img/logo.png" alt="Logo" />
+			<img src="{{ asset('img/logo.png') }}" alt="Logo">
 			</a>
 			<h1 class="titulo">Refugio Patitas</h1>
 		</div>
 		<nav>
-			<a href="mascotas"><i class="fas fa-home"></i>Inicio</a>
+			<a href="/"><i class="fas fa-home"></i>Inicio</a>
 			@if (Route::has('login'))
 				@auth
 					<a href="productos"><i class="fas fa-shopping-cart"></i>Carrito</a>

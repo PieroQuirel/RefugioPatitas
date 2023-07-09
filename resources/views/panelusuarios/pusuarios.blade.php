@@ -48,10 +48,9 @@
                                 <td>{{$user->edad}}</td>
                                 <td>{{$user->celular}}</td>
                                 <td>{{$user->rol}}</td>
-                                <td>
-                                    <button>Eliminar</button>
-                                    <button>Editar</button>
-                                </td>
+                                <td><a href="{{route('panelusuarios.edit', $user->id)}}"><button style="color:orange;">Editar</button></a>
+                                <button style="color:red;">Eliminar</button> 
+                                <button>Mascotas</button></td>
                             </tr>
                         @endforeach
                     </tbody>

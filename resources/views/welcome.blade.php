@@ -23,7 +23,7 @@
 		se muestra un enlace de "Inicio", de lo contrario, se muestran enlaces de "Iniciar sesion" (si la ruta de registro está disponible). -->
         
 		@if (Route::has('login'))
-			<a href="/mascotas"><i class="fas fa-home"></i>Inicio</a>
+			<a href="/"><i class="fas fa-home"></i>Inicio</a>
             @auth
 				<a href="productos"><i class="fas fa-shopping-cart"></i>Carrito</a>
 				<a href="contacto"><i class="fas fa-address-book"></i>Contactos</a>

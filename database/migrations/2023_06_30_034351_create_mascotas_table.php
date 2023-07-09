@@ -15,7 +15,7 @@ return new class extends Migration
             $table->string('tipo',45)->nullable();
             $table->string('raza',45)->nullable();
             $table->integer('mascota_edad')->nullable();
-            $table->dateTime('fecha_recojo')->nullable();
+            $table->date('fecha_recojo')->nullable();
             $table->string('mascota_imagen',500)->nullable();
             $table->mediumText('mascota_descripcion')->nullable();
 

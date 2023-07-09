@@ -10,15 +10,15 @@ use App\Http\Controllers\PanelmascotController;
 use App\Http\Controllers\PanelusuarController;
 use App\Http\Controllers\PerfilController;
 use App\Http\Controllers\ProductoController;
+use App\Http\Controllers\SolicitudController;
 
 /*
 |--------------------------------------------------------------------------
 | Web Routes
 |--------------------------------------------------------------------------
 |
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider and all of them will
-| be assigned to the "web" middleware group. Make something great!
+| Aqui se asignan las rutas que se mostrarán en la URL y nos llevarán a las
+  vistas que le asignemos a los controladores respectivos.
 |
 */
 
@@ -29,22 +29,19 @@ Route::get('/', function () {
 //RUTA DE INDEX usando la forma resource  | esto creo que ya no lo usé xD
 Route::resource('/index', IndexController::class);
 
-//RUTA DE CONTACTO usando la forma get
+//RUTA DE CONTACTO
 Route::get('/contacto', [ContactoController::class,'contacto']);
-//RUTA DE MASCOTAS usando la forma resource
+
+//RUTAS RESOURCE
 Route::resource('/mascotas', MascotasController::class);
-//RUTA DE PERFIL usando la forma resource
 Route::resource('/perfil', PerfilController::class);
-//RUTA DE PRODUCTOS usando la forma resource
 Route::resource('/productos', ProductoController::class);
+Route::resource('/solicitud', SolicitudController::class);
 
 // ------------------ADMINISTRADOR--------------------
-//RUTA PARA VER EL PANEL DE MASCOTAS
-//RESOURCE ES UTIL PARA LAS OPERACIONES CRUD - REVISAR ULTIMA CLASE DE DAI
+//RUTAS PARA PANELES (resource)
 Route::resource('/panelmascotas', PanelmascotController::class);
-//RUTA PARA VER EL PANEL DE USUARIOS
 Route::resource('/panelusuarios', PanelusuarController::class);
-//RUTA PARA VER EL PANEL DE FORMULARIOS
 Route::resource('/panelformularios', PanelformController::class);
 
 //---RUTAS PARA VERIFICACION DE USUARIOS SEGUN SUS ROLES----

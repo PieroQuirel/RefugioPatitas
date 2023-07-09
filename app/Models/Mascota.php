@@ -31,4 +31,8 @@ class Mascota extends Model
     public function foto(){
         return $this->hasMany('App\Models\Foto','mascota','mascota_id');
     }
+
+    public function solicitud(){
+        return $this->hasOne('App\Models\Solicitud','mascota','mascota_id');
+    }
 }
