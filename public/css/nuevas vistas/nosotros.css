@@ -1,0 +1,96 @@
+body{ background-color: beige;}
+#nav{
+    background-color:rgb(216, 124, 19);
+    border: black ;
+}
+#logo{ 
+    height: 75px;
+    width: auto;
+    border-radius: 30%;
+}
+.navbar-brand{ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+padding: 1%;
+font-size: x-large;
+}
+
+#navbarNav{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+    justify-content: flex-end;
+    margin-right: 25px;
+}
+.btn{
+    margin: 0px;
+    margin-left: 7px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 800px;
+  margin: 0 auto;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: white;
+}
+
+.formulario {
+  width: 45%;
+}
+
+.formulario h2 {
+  margin-bottom: 10px;
+}
+
+.formulario form {
+  margin-top: 20px;
+}
+
+.campo {
+  margin-bottom: 15px;
+}
+
+.campo label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.campo input,
+.campo textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+}
+
+.informacion {
+  width: 45%;
+}
+
+.informacion h2,
+.informacion h3 {
+  margin-bottom: 10px;
+}
+
+.informacion p {
+  margin-bottom: 15px;
+}
+
+.informacion strong {
+  font-weight: bold;
+}
+button[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #ff7f00;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #333;
+}

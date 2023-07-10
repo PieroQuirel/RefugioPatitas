@@ -24,7 +24,7 @@ class PanelmascotController extends Controller
             'mascota_nombre' => ['required', 'string', 'max:45'],
             'estado' => ['in:En adopcion,Adoptado,En tratamiento'],
             'mascota_edad' => ['integer', 'max:30'],
-            'mascota' => ['image','mimes:jpeg,jpg,png,svg']
+            'mascota_imagen' => ['image','mimes:jpeg,jpg,png,svg']
         ]);
 
         $mascota = $request->all();

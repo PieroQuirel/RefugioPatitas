@@ -1,0 +1,128 @@
+body{ background-color: beige;}
+#nav{
+    background-color:rgb(216, 124, 19);
+    border: black ;
+}
+#logo{ 
+    height: 75px;
+    width: auto;
+    border-radius: 30%;
+}
+.navbar-brand{ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+padding: 1%;
+font-size: x-large;
+}
+
+#navbarNav{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+    justify-content: flex-end;
+    margin-right: 25px;
+}
+.btn{
+    margin: 0px;
+    margin-left: 7px;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+form {
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Estilos personalizados para el formulario de adopción de mascotas */
+
+
+.titulo_logo {
+  display: flex;
+  align-items: center;
+}
+
+.titulo_logo a {
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+.titulo_logo img {
+  height: 100px;
+  width: auto;
+}
+
+.titulo {
+  font-size: 24px;
+  margin: 0;
+}
+
+
+
+.container {
+  max-width: 600px;
+  margin: 21px auto;
+  padding: 28px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+}
+
+textarea {
+  width: 70%;
+  height: 70px; /* Tamaño fijo del campo de texto */
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+input[type="submit"] {
+  background-color: #ffaa00;
+  color: #ffffff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #000000;
+}
+/* footer */
+.container-fluid{
+  background-color:rgb(216, 124, 19)   ;
+}
+.text-3{
+  font-size: 40px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: black;
+}
+.text-footer{
+  font-size: 3    0px;
+  font-family: 'Times New Roman', Times, serif;
+  color: black;
+
+}
+.container-footer-apps{
+  height: 35px;
+  width: 35px;
+  display: flex;
+  color: transparent;
+}
+.img-apps{
+  border-radius: 100%;
+}
+/* fin footer */

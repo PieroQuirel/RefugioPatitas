@@ -1,0 +1,132 @@
+/* Estilos CSS para el formulario de inicio de sesión */
+body {
+    font-family: Arial, sans-serif;
+ 
+    background-color: beige;
+  }
+
+#nav{
+    background-color:rgb(216, 124, 19);
+    border: black ;
+}
+#logo{ 
+    height: 75px;
+    width: auto;
+    border-radius: 30%;
+}
+.navbar-brand{ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+padding: 1%;
+font-size: x-large;
+}
+
+#navbarNav{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+    justify-content: flex-end;
+    margin-right: 25px;
+}
+.btn{
+    margin: 0px;
+    margin-left: 7px;
+    background-color: #ff7f00;
+}
+  
+  .container {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .container2 {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 5px;
+
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+
+  .texto{
+    text-align: center;
+    color: #6e6e6e;
+  }
+  
+  form {
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    width: 95%;
+    padding: 10px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    color: #333;
+  }
+  
+  button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #ff7f00;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #333;
+  }
+  /* Estilos CSS para los botones adicionales */
+.additional-links {
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  .additional-links button {
+    display: inline-block;
+    margin: 5px;
+    padding: 10px;
+    background-color: #ff7f00;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .additional-links button a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .additional-links button:hover {
+    background-color: #000000;
+  }
+  

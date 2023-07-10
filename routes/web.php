@@ -11,6 +11,7 @@ use App\Http\Controllers\PanelusuarController;
 use App\Http\Controllers\PerfilController;
 use App\Http\Controllers\ProductoController;
 use App\Http\Controllers\SolicitudController;
+use App\Http\Controllers\RespuestasController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,13 +22,13 @@ use App\Http\Controllers\SolicitudController;
   vistas que le asignemos a los controladores respectivos.
 |
 */
-
+//VISTA PRINCIPAL
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
 
-//RUTA DE INDEX usando la forma resource  | esto creo que ya no lo usé xD
-Route::resource('/index', IndexController::class);
+//RUTA DE INDEX usando la forma resource
+//Route::resource('/index', IndexController::class);
 
 //RUTA DE CONTACTO
 Route::get('/contacto', [ContactoController::class,'contacto']);
@@ -37,6 +38,7 @@ Route::resource('/mascotas', MascotasController::class);
 Route::resource('/perfil', PerfilController::class);
 Route::resource('/productos', ProductoController::class);
 Route::resource('/solicitud', SolicitudController::class);
+Route::resource('/preguntas', RespuestasController::class);
 
 // ------------------ADMINISTRADOR--------------------
 //RUTAS PARA PANELES (resource)

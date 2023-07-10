@@ -1,0 +1,27 @@
+.color-backgrund{
+    background-color: #afdfb9;
+}
+#nav{
+    background-color: #0c47b4;
+    border: black ;
+}
+#logo{ 
+    height: 75px;
+    width: auto;
+    border-radius: 30%;
+}
+.navbar-brand{ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+padding: 1%;
+font-size: x-large;
+}
+
+#navbarNav{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+    justify-content: flex-end;
+    margin-right: 25px;
+}
+.btn{
+    margin: 0px;
+    margin-left: 7px;
+}

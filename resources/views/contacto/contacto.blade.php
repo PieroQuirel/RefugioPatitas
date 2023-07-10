@@ -1,38 +1,39 @@
-@extends('layouts.padre')
+@extends('layouts.nuevo')
 
-@section('hijos')
+@section('contenido')
+<link rel="stylesheet" type="text/css" href="{{ asset('css/nuevas vistas/nosotros.css')}}">
 
-<link rel="stylesheet" href="{{ asset('css/nosotros.css') }}">
+<br>
 <div class="container">
     <div class="formulario">
       <h2>Contacto</h2>
-      <form id="formulario-contacto">
-        <div class="campo">
-          <label for="nombre">Nombre:</label>
-          <input type="text" id="nombre" name="nombre" required>
+      <form id="formulario-contacto" action="https://formspree.io/f/mqkvklqz" method="POST">
+        <div class="form-group">
+          <label for="name">Nombre:</label>
+          <input type="text" id="name" name="Nombre" class="form-control" required>
         </div>
-        <div class="campo">
+        <div class="form-group">
           <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required>
+          <input type="email" id="email" name="Email" class="form-control" required>
         </div>
-        <div class="campo">
-          <label for="mensaje">Mensaje:</label>
-          <textarea id="mensaje" name="mensaje" required></textarea>
+        <div class="form-group">
+          <label for="message">Mensaje:</label>
+          <textarea id="message" name="Mensaje" class="form-control" required></textarea>
         </div>
-        <input type="submit" value="Enviar">
+        <br>
+        <button type="submit"  value="Enviar" class="btn btn-primary">Enviar</button>
       </form>
     </div>
     <div class="informacion">
       <h2>Sobre Nosotros</h2>
-      <p>En nuestra empresa, creemos en la importancia de fomentar la adopción de mascotas y en educar a las personas sobre la responsabilidad de tener una mascota. Estamos comprometidos a promover el bienestar animal y a hacer una diferencia en la vida de los animales necesitados. </p>
+      <p>En nuestra empresa, creemos en la importancia de fomentar la adopción de mascotas y en educar a las personas sobre la responsabilidad de tener una mascota. Estamos comprometidos a promover el bienestar animal y a hacer una diferencia en la vida de los animales necesitados.</p>
       <p>¡Contáctanos hoy mismo y permítenos ayudarte a encontrar a tu nuevo mejor amigo!</p>
-     <h3>Información de Contacto</h3>
+      <h3>Información de Contacto</h3>
       <p><strong>Teléfono:</strong> 123456789</p>
       <p><strong>Email:</strong> info@ejemplo.com</p>
       <p><strong>Dirección:</strong> Calle Ejemplo, 123, Ciudad Ejemplo</p>
     </div>
   </div>
-</body>
-</html>
+  <br>
 
 @endsection

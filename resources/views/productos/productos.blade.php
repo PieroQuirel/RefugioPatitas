@@ -1,9 +1,9 @@
-@extends('layouts.padre')
+@extends('layouts.nuevo')
 
-@section('hijos')
+@section('contenido')
 
-<link rel="stylesheet" href="{{ asset('css/carrito.css') }}">
-<script src="{{ asset('javascript/carrito.js') }}"></script>
+<link rel="stylesheet" href="{{ asset('css/vistas antiguas/carrito.css') }}">
+<script src="{{ asset('javascript/antiguo/carrito.js') }}"></script>
 <section class="contenedor">
     <!-- Contenedor de elementos -->
     <div class="contenedor-items">
@@ -20,45 +20,45 @@
             <button class="boton-item">Agregar al Carrito</button>
         </div>
         <div class="item">
-            <span class="titulo-item">Collar Para Perros</span>
+            <span class="titulo-item">Collar Para Gatos</span>
             <img src="img/producto3" alt="" class="img-item">
-            <span class="precio-item">$35.000</span>
+            <span class="precio-item">$2.00</span>
             <button class="boton-item">Agregar al Carrito</button>
         </div>
         <div class="item">
             <span class="titulo-item">Cama Alfombra</span>
             <img src="img/producto4" alt="" class="img-item">
-            <span class="precio-item">$18.000</span>
+            <span class="precio-item">$18.00</span>
             <button class="boton-item">Agregar al Carrito</button>
         </div>
         <div class="item">
             <span class="titulo-item">Cama Almoada</span>
             <img src="img/producto5" alt="" class="img-item">
-            <span class="precio-item">$32.000</span>
+            <span class="precio-item">$30.00</span>
             <button class="boton-item">Agregar al Carrito</button>
         </div>
         <div class="item">
             <span class="titulo-item">Cuerda Para Morder</span>
             <img src="img/producto6" alt="" class="img-item">
-            <span class="precio-item">$18.000</span>
+            <span class="precio-item">$14.00</span>
             <button class="boton-item">Agregar al Carrito</button>
         </div>
         <div class="item">
             <span class="titulo-item">Zapatos Impermeables</span>
             <img src="img/producto7" alt="" class="img-item">
-            <span class="precio-item">$54.00</span>
+            <span class="precio-item">$40.00</span>
             <button class="boton-item">Agregar al Carrito</button>
         </div>
         <div class="item">
             <span class="titulo-item">Pelota De Tenis</span>
             <img src="img/producto8.jpg" alt="" class="img-item">
-            <span class="precio-item">$32.000</span>
+            <span class="precio-item">$8.00</span>
             <button class="boton-item">Agregar al Carrito</button>
         </div>
         <div class="item">
             <span class="titulo-item">Hueso mordedor - Kong Extreme</span>
             <img src="img/producto9.jpg" alt="" class="img-item">
-            <span class="precio-item">$42.800</span>
+            <span class="precio-item">$15.50</span>
             <button class="boton-item">Agregar al Carrito</button>
         </div>
     </div>

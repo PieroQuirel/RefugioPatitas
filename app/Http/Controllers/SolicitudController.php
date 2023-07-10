@@ -59,8 +59,8 @@ class SolicitudController extends Controller
             $Solicitud['comprobante_domicilio'] = "$NuevoNombreSolicitud";
         }
 
-        Solicitud::create($solicitud);
-        return redirect()->route('');
+        $NuevaSolicitud = Solicitud::create($solicitud);
+        return redirect()->route('preguntas.edit',['id' => $NuevaSolicitud->id]);
         //dd($request->all());
     }
 

@@ -1,0 +1,124 @@
+.color-todo{
+background-color: beige;
+}
+#nav{
+    background-color:rgb(216, 124, 19);
+    border: black ;
+}
+#logo{ 
+    height: 75px;
+    width: auto;
+    border-radius: 30%;
+}
+.navbar-brand{ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+padding: 1%;
+font-size: x-large;
+}
+
+#navbarNav{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+    justify-content: flex-end;
+    margin-right: 25px;
+}
+.btn{
+    margin: 0px;
+    margin-left: 7px;
+}
+h1{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.container-VerDetalles {
+  max-width: 100%;
+  margin: 0 auto;
+  
+
+  padding: 20px;
+  border-radius: 10%;
+}
+.info{
+  width: 50%;
+}
+.info-1{
+  text-align: center;
+}
+.pet-details {
+
+  border-radius: 5px;
+  padding: 20px;
+  display: flex;
+  margin-bottom: 20px;
+ ;
+}
+
+.linea-negra{
+ width: 60%;
+ margin-left: 20%;
+ align-items: center;
+    border-top: 1px solid black;
+  
+}
+.img-de-mascota{
+  display: flex;
+padding: 5%;
+  width: 50%;
+  height: 50%;
+}
+.img-mascotas-2{
+  margin-left: 7%;
+}
+.pet-details img {
+  width: 50%; 
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.pet-details h2 {
+  margin-top: 0;
+  color: #212020;
+}
+
+.pet-details p {
+  margin-bottom: 10px;
+  color: #555;
+}
+.DNI{
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.Volver-Catalogo {
+  color: #555;
+  text-decoration: double;
+  margin-left: 100px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+/* footer */
+.container-fluid{
+  background-color:rgb(216, 124, 19)   ;
+}
+.text-3{
+  font-size: 40px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: black;
+}
+.text-footer{
+  font-size: 3    0px;
+  font-family: 'Times New Roman', Times, serif;
+  color: black;
+
+}
+.container-footer-apps{
+  height: 35px;
+  width: 35px;
+  display: flex;
+  color: transparent;
+}
+.img-apps{
+  border-radius: 100%;
+}
+/* fin footer */

@@ -55,6 +55,7 @@
 	</div>
 	<div class="contenido">
 		<div class="info">
+			//BOTONES QUE APARECEN CUANDO TE LOGUEAS
 		  <div class="botones-contenido">
 			<a href="mascotas" class="boton">Mascotas</a>
 			<a href="productos" class="boton">Productos</a>
