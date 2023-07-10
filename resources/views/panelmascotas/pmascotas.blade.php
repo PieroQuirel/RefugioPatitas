@@ -52,7 +52,7 @@
                                 <td><a href="{{route('panelmascotas.edit', $mascota->mascota_id)}}"><button style="color:orange;">Editar</button></a>
                                 <button style="color:red;">Eliminar</button> 
                                 <button>Registro Médico</button></td>
-                        @endforeach
+                            @endforeach
                     </tbody>
                 </table>
                     <div>

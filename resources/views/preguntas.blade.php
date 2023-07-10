@@ -7,6 +7,7 @@
     <h1>Formulario de adopción de mascotas</h1>
 
     <form method="post" action="https://formspree.io/f/xaygyogb">
+      
       <div class="form-group">
         <label for="nombre">1. ¿Por qué desea adoptar?</label><br>
         <textarea id="1. ¿Por qué desea adoptar?" name="1. ¿Por qué desea adoptar?" rows="4" required></textarea>

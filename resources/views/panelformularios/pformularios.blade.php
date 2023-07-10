@@ -41,6 +41,21 @@
                         </tr>
                     </thead>
                     <tbody>
+                    @foreach ($solicitudes as $solicitud)
+                            <tr>
+                                <td>{{$solicitudes->solicitud_id}}</td>                                                        
+                                <td>{{$solicitudes->adoptante}}</td>                                                        
+                                <td>{{$solicitudes->mascota}}</td>                                                        
+                                <td>{{$solicitudes->DNI}}</td>                                                     
+                                <td>{{$solicitudes->fecha_envio}}</td>                                                       
+                                <td>{{$solicitudes->direccion}}</td>                                    
+                                <td>{{$mascota->comprobante_domicilio}}</td>
+                                <td>{{$mascota->estado}}</td>
+                                <td><a href="{{route('panelformularios.edit',$solicitudes->solicitud_id}}"><button style="color:orange;">Editar</button></a>
+                                <button style="color:red;">Eliminar</button> 
+                                <button>Respuestas</button></td>
+                            @endforeach
+                    </tbody>
                        
                 </table>
                     <div>

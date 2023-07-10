@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Solicitud;
 use App\Models\Solicitud_Adopcion;
 use Illuminate\Http\Request;
 
@@ -10,7 +11,8 @@ class PanelformController extends Controller
 
     public function index()
     {
-        return view('panelformularios.pformularios');
+        $solicitudes = Solicitud::all();
+        return view('panelformularios.pformularios',compact('solicitudes'));
     }
 
     public function create()
